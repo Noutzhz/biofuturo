@@ -1,0 +1,82 @@
+/* Reset de estilos */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Estilos do corpo */
+body {
+    background-color: #f4f4f4; /* Cinza claro */
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #2E8B57; /* Verde SeaGreen */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Estilos da navegação */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #014e02; /* Verde mais escuro */
+}
+
+/* Estilos do conteúdo principal */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #228B22; /* Verde ForestGreen */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #333; /* Cinza escuro */
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #2E8B57; /* Verde SeaGreen */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+}

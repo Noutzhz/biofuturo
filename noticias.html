@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bio Futuro - Notícias</title>
+    <style>
+        /* Estilo para o pop-up */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+            max-width: 90%;
+            max-height: 90%;
+            overflow: auto;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        /* Estilo para a animação de fadeIn */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Estilo para o botão de fechar */
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Estilo para a imagem */
+        .noticia-img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px; /* Definindo a altura máxima da imagem */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Notícias</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Voltar para Bio Futuro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Inicio do projeto Bio Mundo</h2>
+            <img src="./src/WhatsApp Image 2024-03-25 at 08.57.59.jpeg" alt="Notícia 1" class="noticia-img" onclick="mostrarPopup('noticia1')">
+            <p>Data: 22 de março de 2024</p>
+            <p>O projeto Bio Mundo, criado pelos alunos do Cemus V, tem como objetivo realizar o tão sonhado Bio Mundo.</p>
+        </article>
+
+    </main>
+
+    <!-- Pop-up da notícia -->
+    <div id="noticia1" class="popup">
+        <span class="close" onclick="fecharPopup('noticia1')">&times;</span>
+        <h2>Projeto Bio Mundo</h2>
+        <p>Data: 22 de março de 2024</p>
+        <p>O projeto Bio Mundo, em parceria com o <a href="https://www.sosma.org.br/" target="_blank">SOS Mata Atlântica</a>, tem como objetivo criar um mundo mais sustentável, iniciado na cidade de Salto, São Paulo, na escola CEMUS V - Luiz Rodrigues de Almeida. Os alunos se organizam para desenvolver o projeto, contando com a supervisão do professor Vando, que os ajuda a coordenar suas iniciativas.
+
+            O Bio Mundo surge como uma resposta ao crescente desafio da preservação ambiental e da promoção da sustentabilidade. Com o apoio da renomada organização ambiental, os alunos estão trabalhando arduamente para implementar práticas sustentáveis e promover a conscientização ambiental em sua comunidade e além.
+            
+            Além de criar este site, os alunos estão trabalhando em outras iniciativas nas partes internas do projeto. Eles estão desenvolvendo estratégias para reduzir o consumo de recursos naturais, promovendo a reciclagem e a reutilização de materiais, e organizando eventos e campanhas para envolver a comunidade escolar e local.
+            
+            Com o Bio Mundo, os alunos do CEMUS V estão demonstrando seu compromisso com um futuro mais verde e sustentável. </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Bio Futuro. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para mostrar o pop-up
+        function mostrarPopup(id) {
+            var popup = document.getElementById(id);
+            popup.style.display = "block";
+        }
+
+        // Função para fechar o pop-up
+        function fecharPopup(id) {
+            var popup = document.getElementById(id);
+            popup.style.display = "none";
+        }
+    </script>
+</body>
+</html>
